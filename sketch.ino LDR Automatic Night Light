@@ -1,0 +1,2 @@
+void setup(){pinMode(8,OUTPUT);Serial.begin(9600);}
+void loop(){int light=analogRead(A0);Serial.println(light);digitalWrite(8,light>700?HIGH:LOW);delay(500);}
